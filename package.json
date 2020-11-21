@@ -1,12 +1,7 @@
 {
-  "name": "basic-template",
+  "name": "rubber-duck-bot",
   "version": "1.0.0",
-  "description": "Basic configuration for nodejs webpack typescript development",
-  "main": "index.js",
-  "engines": {
-    "node": "14.15.1",
-    "npm": "6.14.8"
-  },
+  "description": "Just a telegram bot made for fun",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode=production --config webpack/config.prod.js",
     "dev": "cross-env NODE_ENV=development webpack --mode=development  --config webpack/config.dev.js --watch",
@@ -16,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gianzamboni/basic-template.git"
+    "url": "git+https://github.com/gianzamboni/RubberDuckBot.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gianzamboni/basic-template/issues"
+    "url": "https://github.com/gianzamboni/RubberDuckBot/issues"
   },
-  "homepage": "https://github.com/gianzamboni/basic-template#readme",
+  "homepage": "https://github.com/gianzamboni/RubberDuckBot#readme",
   "devDependencies": {
     "@types/express": "^4.17.9",
     "@types/node": "^14.14.7",

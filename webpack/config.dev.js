@@ -5,5 +5,6 @@ const NodemonPlugin = require('nodemon-webpack-plugin');
 const common = require('./common.js');
 
 commonConfig.plugins.push(new NodemonPlugin());
+commonConfig.devtool = "inline-source-map",
 
 module.exports = commonConfig;
