@@ -2,13 +2,13 @@
   "name": "rubber-duck-bot",
   "version": "1.0.0",
   "description": "Just a telegram bot made for fun",
-  "engines": {	
-    "node": "14.15.1",	
-    "npm": "6.14.8"	
+  "engines": {
+    "node": "14.15.1",
+    "npm": "6.14.8"
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --mode=production --config webpack/config.prod.js",
-    "dev": "cross-env NODE_ENV=development webpack --mode=development  --config webpack/config.dev.js --watch",
+    "build": "webpack --mode=production --config webpack/config.prod.js",
+    "dev": "cross-env-file -p .env webpack --mode=development  --config webpack/config.dev.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node build/main.js",
     "heroku-postbuild": "npm run build"
@@ -28,7 +28,7 @@
     "@types/node": "^14.14.7",
     "@types/node-telegram-bot-api": "^0.50.4",
     "cross-env": "^7.0.2",
-    "dotenv": "^8.2.0",
+    "cross-env-file": "^1.0.0",
     "nodemon-webpack-plugin": "^4.3.2",
     "ts-loader": "^8.0.11",
     "typescript": "^4.0.5",
