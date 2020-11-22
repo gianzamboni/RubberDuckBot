@@ -5,7 +5,7 @@ import path from 'path';
 import { EnvironmentSettings } from './models/environment-settings';
 import { RubberDuckBot } from './models/rubber-duck-bot';
 
-if(process.env.NODE_ENV) {
+if(process.env.NODE_ENV === 'development') {
   dotenv.config({
     path: path.resolve(__dirname, '../.env')
   });
