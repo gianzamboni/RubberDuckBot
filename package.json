@@ -7,11 +7,11 @@
     "npm": "6.14.8"
   },
   "scripts": {
-    "build": "webpack --mode=production --config webpack/config.prod.js",
-    "dev": "cross-env-file -p .env webpack --mode=development  --config webpack/config.dev.js --watch",
+    "build": "cross-env-file -p env.prod.json webpack --mode=production --config webpack/config.prod.js",
+    "dev": "cross-env-file -p .env.dev.json webpack --mode=development  --config webpack/config.dev.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node build/main.js",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "webpack --mode=production --config webpack/config.prod.js"
   },
   "repository": {
     "type": "git",
