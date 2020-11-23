@@ -19,3 +19,7 @@ Features:
 * When a message has the string "no.", it automatically sends this gif:
      
      ![no gif]("https://media0.giphy.com/media/W2zOnQonnYsNXnUxXo/giphy.gif")
+
+* When a message has the string "si.", it automatically sends this gif:
+
+     ![si gif]("https://media1.tenor.com/images/4fa3a2b2ccdb4d629b065ac2b62a86f0/tenor.gif")     

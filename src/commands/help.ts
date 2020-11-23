@@ -7,7 +7,7 @@ const help: BotCommand = {
   regex: /^\/help$/,
   exec: (bot: TelegramBot, message: Message) => {
     let helpText = `I will send gifs automatically if I find certain words in your messages. This words are:\n\n`;
-    helpText += `"owo", "uwu" and "no." including some of theirs variations`
+    helpText += `"owo", "uwu", "no." and "si." including some of theirs variations`
     
     bot.sendMessage(message.chat.id, helpText);
   }
