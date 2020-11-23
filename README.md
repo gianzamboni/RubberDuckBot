@@ -14,4 +14,8 @@ Features:
   
 * When a message has the string "owo" (or something similar), it automatically sends this gif:
   
-     ![uwu gif](https://media1.tenor.com/images/f5bc4d03d3c78d585508945daead8a7e/tenor.gif)
+     ![owo gif](https://media1.tenor.com/images/f5bc4d03d3c78d585508945daead8a7e/tenor.gif)
+
+* When a message has the string "no.", it automatically sends this gif:
+     
+     ![no gif]("https://media0.giphy.com/media/W2zOnQonnYsNXnUxXo/giphy.gif")
