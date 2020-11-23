@@ -19,9 +19,11 @@ export class RubberDuckBot {
     }
 
     for (let command of commandList) {
-      this.bot.onText(command.regex, (message: Message) => {
-        console.log(`${message.from?.username || message.from?.first_name} requested ${command.name} command`);
-        command.exec(this.bot, message);
+      this.bot.on('message', (message: Message) => {
+        if(message.text?.match(command.regex) ||message.caption?.match(command.regex)){
+          console.log(`${message.from?.username || message.from?.first_name} requested ${command.name} command`);
+          command.exec(this.bot, message);
+        }
       });
     }
   }
